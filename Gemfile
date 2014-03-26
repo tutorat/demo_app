@@ -5,9 +5,6 @@ ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.8'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
 
@@ -39,7 +36,10 @@ group :production do
 	gem 'rails_12factor', '0.0.2'
 end
 
-
+group :development do
+	# Use sqlite3 as the database for Active Record
+	gem 'sqlite3', '1.3.8'
+end
 
 
 # Use ActiveModel has_secure_password
